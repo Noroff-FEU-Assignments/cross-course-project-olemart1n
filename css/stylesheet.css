@@ -1,0 +1,150 @@
+
+
+body, html {
+    min-height: 100vh;
+    margin: 0px;
+    grid-gap: 0px;
+    background-image: url(/images/background-image.png);
+}
+
+/* homepage - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+
+header {
+    background-color: hsl(197, 96%, 38%);
+    border-radius: 10px;
+    margin: 0px 4px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.details {
+    display: none;
+}
+
+main div div h2 {
+    display: block;
+}
+@media (min-width: 600px) {
+    header {
+        margin: 0px;
+        border-radius: 0px;
+    }
+    .mobile-nav,
+    .profile_icon,
+    .cart_icon {
+        display: none;
+    } 
+    .rainydays_logo {
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: auto auto;
+
+    }
+    .products {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    
+    .details {
+        display: block;
+    }
+    .desktop-nav {
+        display: block;
+        grid-area: right;
+        justify-content: space-between;
+    }
+    main {
+        min-height: 100v;
+    }
+}
+
+.rainydays_logo {
+    padding: 0px 40px;
+}
+
+.hamburger {
+}
+
+.profile_icon {
+}
+
+/* navigation - - - - - - - - - - - - - - - - - - - - - - - - - -  - - -  */
+
+ul {
+    padding: 0px;
+}
+
+nav a {
+    padding: 10px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #F2B705;
+    
+}
+
+nav {
+    display: inline-block;
+    display: none;
+    background-color: white;
+}
+
+#hamburger-menu {
+    display: none;
+}
+
+#hamburger-menu:checked ~ nav {
+    display: inline-block;
+    position: absolute;
+}
+#hamburger-menu:checked ~ li {
+    padding: 0px;
+}
+
+.active {
+    font-weight: bold;
+}
+
+/* main */
+
+main {
+    text-align: center;
+}
+
+main img {
+    max-width: 100%;
+    width: 400px;
+}
+
+
+
+/* bottom of the page - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+footer {
+    background-color: #F2B70F;
+    margin-bottom: 0px;
+    font-family: Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.box {
+    position: right;
+}
+
+.box-1 {
+    display: grid;
+    grid-template-rows: auto;
+    padding: 10px;
+    max-height: 100%;
+}
+/*--------------------------------------------------------------------------*/
+
