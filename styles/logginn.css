@@ -1,0 +1,140 @@
+@font-face {
+    font-family: "Mukta";
+    src: url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+}
+
+
+:root {
+    --bright-blue: #2496C6;
+    --bc-yellow: #F2B70F;
+    --text-grey: #302d2d;
+    --main-font: "helvetica neue";
+}
+
+
+.main-signup {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto;
+    font-family: var(--main-font);
+    text-transform: uppercase;
+    padding-top: 100px;
+}
+
+.sign-up-site { 
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 700px;
+    height: 400px;
+    border-radius: 15px;
+    border: 1px solid black;
+    position: relative;
+    background: rgb(242, 183, 15, 0.4);
+    text-align: center;
+}
+
+input {
+    width: 50%;
+    align-self: center;
+    border: none;
+    height: 25px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.pay-process {
+    margin: auto;
+    width: 700px;
+    height: 200px;
+    border-radius: 15px;
+    border: 1px solid black;
+    position: relative;
+    background: rgb(242, 183, 15, 0.4);
+    text-align: center;
+}
+
+.fab {
+    padding: 20px;
+}
+
+.fab:hover {
+    color: blue;
+}
+
+
+.submit-signup {
+    background: var(--bc-yellow);
+    color: var(--text-grey);
+    text-decoration: none;
+    margin: auto;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+
+.signupimage {
+    background: url(/images/Image-contact.png);
+    background-repeat: no-repeat;
+    width: 700px;
+}
+@media (max-width: 1115px) {
+    nav {
+        display: none;
+
+    }
+    .sign-up-site { 
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 400px;
+        height: 400px;
+        border-radius: 15px;
+        border: 1px solid black;
+        position: relative;
+        background: rgb(242, 183, 15, 0.4);
+        text-align: center;
+    }
+    .pay-process {
+        margin: auto;
+        width: 400px;
+        height: 200px;
+        border-radius: 15px;
+        border: 1px solid black;
+        position: relative;
+        background: rgb(242, 183, 15, 0.4);
+        text-align: center;
+    }
+    #hamb {
+        display: block;
+        position: absolute;
+        right: 0px;}
+}
+
+@media (max-width: 710px) {
+    .sign-up-site { 
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 250px;
+        height: 500px;
+        border-radius: 15px;
+        border: 1px solid black;
+        position: relative;
+        background: rgb(242, 183, 15, 0.4);
+        text-align: center;
+    }
+    .pay-process {
+        margin: auto;
+        width: 250px;
+        height: 300px;
+        border-radius: 15px;
+        border: 1px solid black;
+        position: relative;
+        background: rgb(242, 183, 15, 0.4);
+        text-align: center;
+    }
+    .submit-signup {
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,36 @@
+.main-favourite {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 20px;
+    row-gap: 20px;
+    min-height: 100vh;
+}
+
+section img {
+    width: 100%;
+}
+
+section {
+    margin-top: 100px;
+}
+
+.out-of-stock {
+    position: absolute;
+}
+
+@media (max-width: 1415px) {
+    .main-favourite {
+        grid-template-columns: auto;
+        transition-duration: 0.5s;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 900px) {
+    .main-favourite {
+        max-width: 80%;
+        transition-duration: 0.5s;
+    }
+}
