@@ -112,6 +112,7 @@ nav a:hover {
     display: none;
 }
 
+
 @media (max-width: 950px) {
     .products-test {
         flex-wrap: wrap;
@@ -124,13 +125,20 @@ nav a:hover {
     nav {
         display: none;
     }
+
     #hamb {
         display: block;
         position: absolute;
         right: 0px;
+        z-index: 1;
     }
+    #hamb:hover {
+        color: blue;
+    }
+
     #hamb-menu:checked ~ nav {
         display: block;
+        position: relative;
     }
 }
 

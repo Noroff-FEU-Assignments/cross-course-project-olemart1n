@@ -58,9 +58,11 @@ input {
 .fab {
     padding: 20px;
 }
+
 .fab:hover {
     color: blue;
 }
+
 
 .submit-signup {
     background: var(--bc-yellow);

@@ -1,0 +1,25 @@
+.contact-main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.contact-main div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+#contacttext {
+    flex: 1 1 250px;
+    width: 200px;
+}
+
+
+#send-mail {
+    background: #F2B70F;
+    padding: 10px;
+    text-transform: uppercase;
+    border: none;
+    margin-top: 10px;
+}
