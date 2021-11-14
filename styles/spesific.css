@@ -70,7 +70,7 @@
     background: var(--bc-yellow);
     color: var(--text-grey);
     text-decoration: none;
-    padding: 5px 20px;
+    padding: 10px 20px;
     border-radius: 3px;
     position: relative;
 }
