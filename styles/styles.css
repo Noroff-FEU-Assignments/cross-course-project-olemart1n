@@ -1,53 +1,36 @@
-
-
-@font-face {
-    font-family: "Mukta";
-    src: url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-}
-
-
 :root {
     --bright-blue: #2496C6;
     --bc-yellow: #F2B70F;
     --text-grey: #302d2d;
-    --main-font: "helvetica neue";
+}
+header h1 {
+    display: none;
 }
 *,
 *::before,
 *::after {
     box-sizing: border-box;
+    margin: 0px;
 }
+
+/*_________________*/
 
 body {
-    margin: 0px;
-    font-family: var(--main-font);
-}
-
-header h1 {
-    display: none;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header {
-    background:linear-gradient(to right, #0082b1, #FFF);
+    background: #0082b1;
     display: flex;
-    align-items: center;
+    place-content: center;
 }
 
-.home-link {
-    width: 250px;
-    padding-left: 20px;
-}
-
-.home-section {
-    min-height: 120px;
-    position: relative;
-    margin-bottom: 2%;
-    margin-top: 15px;
+.home-button {
+    width: 260px;
 }
 
 .products-image {
-    border-radius: 7px;
-    margin-left: 30px;
+    border-radius: 3px;
 }
 
 main {
@@ -58,9 +41,20 @@ main {
     flex-direction: column;
 }
 
+main div {
+    display: flex;
+    margin: 20px;
+}
+
+main div div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
 
 nav {
       position: absolute;
+      top: 160px; 
       right: 4px;
       display: flex;
       flex-direction: column;
@@ -68,16 +62,14 @@ nav {
       height: 70vh;
       justify-content: space-evenly;
       width: 200px;
-      position: fixed;
       z-index: 1;
-   }
+   } 
 
    nav a {
     text-decoration: none;
     color: black;
     font-size: 1.5em;
     font-weight: normal;
-    font-family: var(--main-font);
     padding-left: 10px;
 }
 
@@ -85,90 +77,112 @@ nav a:hover {
     color: var(--bright-blue);
 }
 
-.logg-inn {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    background: #F2B70F;
-    right: 200px;
-    top: 450px;
-    text-align: center;
-    border-radius: 5px;
-    position: fixed;
-    height: 200px;
-    z-index: 1;
-    place-content: space-between;
-    display: none;
-
-}
-#logg-inn_form {display: none;}
-.logg-inn > * {
-    display: flex;
-    flex-direction: column;
-}
-.sign-up {text-decoration: none;}
-
-#hamb {
+.eyy {
     display: none;
 }
 
+@media (max-width: 900px) {
 
-@media (max-width: 950px) {
-    .products-test {
-        flex-wrap: wrap;
+
+
+    .eyy {
+        display: block;
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    .bart {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 7px auto;
+        background-color: white;
+    
     }
 
-    .products-image {
-        height: 100px;
+    .eyy.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .eyy.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .eyy.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navbar {
+        top: 75px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #0082b1;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        left: 100%;
+    }
+
+    .navbar.active {
+        left: 0;
+    }
+
+
+    .home-button {
+        width: 200px;
+    }
+    main {
+        align-items: center;
+    }
+
+    main div {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
     }
     
-    nav {
-        display: none;
+    main img {
+        width: 100%;
     }
+    
 
-    #hamb {
-        display: block;
-        position: absolute;
-        right: 0px;
-        z-index: 1;
-    }
-    #hamb:hover {
-        color: blue;
-    }
-
-    #hamb-menu:checked ~ nav {
-        display: block;
-        position: relative;
+    footer {
+        flex-direction: column;
     }
 }
 
 /*-------------------------------------------------*/
-.cta-button {
-    background: var(--bc-yellow);
+
+
+
+
+div div button {
+    background: rgb(221, 221, 156);
     color: var(--text-grey);
     text-decoration: none;
-    position: absolute;
-    padding: 5px 20px;
-    border-radius: 3px;
+    padding: 5px 30px;
+    border-radius: 2px;
+    border: 0px;
 }
 
-#hamb-menu, .profile-icon, .cart-icon {display: none;}
-
-
-.products-test {
-    display: flex;
-    margin-bottom: 30px;
-
-}
-
-.products-test div {
-    margin-left: 8%;
+div div button:hover {
+    cursor: pointer;
 }
 
 .process {
-    font-family: var(--main-font);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding-left: 1.3%;
 }
+
+
+
+
+
+
+
+
+
+/*_____*/
 
 footer {
     background-color: var(--bc-yellow);
@@ -182,15 +196,11 @@ footer {
     flex: 1;
     font-family: var(--main-font);
     color: var(--text-grey);
-    text-align: left;
+    text-align: left; 
     margin-left: 5px;
 }
 .footer-icons {
     flex: 1;
     display: row;
     padding: 30px;
-}
-
-.active {
-    font-weight: bolder;
 }

@@ -66,7 +66,7 @@
 .b {background-color: var(--bright-blue);}
 .c {background-color: green;}
 
-.cta-button {
+view {
     background: var(--bc-yellow);
     color: var(--text-grey);
     text-decoration: none;

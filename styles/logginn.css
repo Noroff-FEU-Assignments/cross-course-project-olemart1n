@@ -11,28 +11,10 @@
     --main-font: "helvetica neue";
 }
 
-
-.main-signup {
+main {
     min-height: 100vh;
-    display: grid;
-    grid-template-rows: auto auto;
-    grid-template-columns: auto;
     font-family: var(--main-font);
     text-transform: uppercase;
-    padding-top: 100px;
-}
-
-.sign-up-site { 
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    width: 700px;
-    height: 400px;
-    border-radius: 15px;
-    border: 1px solid black;
-    position: relative;
-    background: rgb(242, 183, 15, 0.4);
-    text-align: center;
 }
 
 input {
@@ -42,17 +24,6 @@ input {
     height: 25px;
     padding: 10px;
     margin: 10px;
-}
-
-.pay-process {
-    margin: auto;
-    width: 700px;
-    height: 200px;
-    border-radius: 15px;
-    border: 1px solid black;
-    position: relative;
-    background: rgb(242, 183, 15, 0.4);
-    text-align: center;
 }
 
 .fab {
@@ -73,68 +44,17 @@ input {
     border-radius: 3px;
 }
 
-.signupimage {
-    background: url(/images/Image-contact.png);
-    background-repeat: no-repeat;
-    width: 700px;
-}
+
 @media (max-width: 1115px) {
     nav {
         display: none;
 
     }
-    .sign-up-site { 
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        width: 400px;
-        height: 400px;
-        border-radius: 15px;
-        border: 1px solid black;
-        position: relative;
-        background: rgb(242, 183, 15, 0.4);
-        text-align: center;
-    }
-    .pay-process {
-        margin: auto;
-        width: 400px;
-        height: 200px;
-        border-radius: 15px;
-        border: 1px solid black;
-        position: relative;
-        background: rgb(242, 183, 15, 0.4);
-        text-align: center;
-    }
     #hamb {
         display: block;
         position: absolute;
         right: 0px;}
-}
-
-@media (max-width: 710px) {
-    .sign-up-site { 
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        width: 250px;
-        height: 500px;
-        border-radius: 15px;
-        border: 1px solid black;
-        position: relative;
-        background: rgb(242, 183, 15, 0.4);
-        text-align: center;
-    }
-    .pay-process {
-        margin: auto;
-        width: 250px;
-        height: 300px;
-        border-radius: 15px;
-        border: 1px solid black;
-        position: relative;
-        background: rgb(242, 183, 15, 0.4);
-        text-align: center;
-    }
-    .submit-signup {
-        margin-top: 10px;
+    .home-link {
+        width: 200px;
     }
 }

@@ -1,36 +1,20 @@
-.section-1 {
+main {
+    height: 100vh;
     display: flex;
-    flex-direction: row;
-    margin: auto;
-    margin-top: 50px;
+    flex-direction: column;
+    align-items: center;
 }
 
-.section-2 {
-    margin: auto;
-    margin-top: 100px;
-
-}
-
-.summary {
+.first-summary {
     display: flex;
-    flex-direction: row;
-    text-transform: uppercase;
-    flex-basis: auto;
+    flex-direction: column;
 }
 
-.second-summary {
-    margin-left: 30px;
-    margin-top: 50px;
+#img {
+    max-width: 400px;
+    width: auto;
 }
 
-.summary-image {
-    padding-left: 70px;
-}
-
-.summary-image img {
-    width: 100%;
-    border: 3px solid white;
-}
 
 .payment-details-1 {
     display: flex;
@@ -38,16 +22,13 @@
     width: 200px;
 }
 
-input {
-    margin: 5px;
+fieldset {
+    max-width: 400px;
 }
 
-.fab:hover {
-    color: blue;
-}
-
-.pay-process {
-    margin-top: 100px;
+#hey{
+    display: flex;
+    flex-direction: column;
 }
 
 .checkout-area-visa {
@@ -57,32 +38,10 @@ input {
     display: none;
 }
 
-    .fab:checked ~ .checkout-area-visa {
-        display: flex;
-    }
 
-#placeorder {
-    background: green;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 10px;
-    margin-top: 50px;
-}
-
-@media (max-width: 1080px) {
+@media (max-width: 900px) {
     nav {
         display: none;
-    }
-    .section-1 {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .summary-image {
-        display: none;
-    }
-    .payment-details-1 {
-        margin:auto;
-
     }
     #hamb-menu:checked ~ nav{
         display: block;
